@@ -6,6 +6,9 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
 class MyProjectApplicationTests {
 
+	/**
+	 * Now I haven't test
+	 */
 	@Test
 	void contextLoads() {
 	}

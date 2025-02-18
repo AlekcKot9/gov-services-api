@@ -3,7 +3,7 @@ package com.java_project.my_project.controller;
 import org.springframework.web.bind.annotation.*;
 
 /**
- * * это класс контроллера.
+ * это класс контроллера.
  */
 @RestController
 @RequestMapping("/api/v1/project")
