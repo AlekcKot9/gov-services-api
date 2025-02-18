@@ -1,31 +1,25 @@
-E-Government Services API
+# E-Government Services Portal
 
-Overview
+This is a REST API built with Spring Boot for an e-government services website.
 
-This project is a REST API developed using Spring Boot for an e-government services website. The API enables citizens to interact with various government services online, such as applying for documents, checking application statuses, and receiving digital notifications.
+## 🚀 Features
+- ✅ User authentication and authorization (**JWT**)
+- 📑 Public service requests
+- 💳 Payment processing
+- 📂 Document management
+- 🌐 RESTful API with JSON responses
 
-Features
+## 🛠️ Technologies Used
+- ☕ Java 17
+- 🌱 Spring Boot
+- 🔒 Spring Security
+- 🗄️ Hibernate & PostgreSQL
+- 🐘 Docker
+- 📦 Maven
 
- • User authentication and role-based access control
- 
- • Application submission and processing
- 
- • Document verification and issuance
- 
- • Status tracking for government services
- 
- • Secure API endpoints with JWT authentication
- 
- • Integration with external government databases
+## 📦 Installation
 
-Technology Stack
-
- • Backend: Java, Spring Boot, Spring Security, Spring Data JPA
- 
- • Database: PostgreSQL
- 
- • Authentication: JWT (JSON Web Token)
- 
- • API Documentation: OpenAPI / Swagger
- 
- • Build Tools: Maven
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/yourusername/egov-services.git
+   cd egov-services
