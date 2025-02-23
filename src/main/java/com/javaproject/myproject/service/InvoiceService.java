@@ -7,6 +7,10 @@ public class InvoiceService {
     }
 
     public static double getDebtByFacilitiesType(String facilitiesType) {
-        return 123;
+        if (facilitiesType == "water") {
+            return 123;
+        } else {
+            return 321;
+        }
     }
 }

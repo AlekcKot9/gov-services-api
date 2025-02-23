@@ -4,11 +4,15 @@ import com.javaproject.myproject.model.*;
 
 public class AuthService {
 
+    public static String concatenate(AuthRequest authRequest) {
+        return authRequest.getUsername();
+    }
+
     public static String logInUser(AuthRequest authRequest) {
-        return "user logged in";
+        return authRequest.getUsername() + " log in";
     }
 
     public static String signUpUser(AuthRequest authRequest) {
-        return "user signed up";
+        return authRequest.getUsername() + " sign up";
     }
 }

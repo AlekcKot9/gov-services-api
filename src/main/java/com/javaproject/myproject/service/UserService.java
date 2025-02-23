@@ -9,6 +9,6 @@ public class UserService {
     }
 
     public static String changePassword(UpdatePasswordRequest updatePasswordRequest) {
-        return "password changed";
+        return updatePasswordRequest.getOldPassword() + " updated";
     }
 }
