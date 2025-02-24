@@ -11,16 +11,20 @@ public class InvoiceService {
     public static AnsString getInvoiceByFacilitiesType(String serviceType) {
         if (serviceType.equals("water")) {
             return new AnsString("245444324");
-        } else {
+        } else if (serviceType.equals("gaz")) {
             return new AnsString("234nll");
+        } else {
+            return new AnsString("not found type");
         }
     }
 
     public static AnsString getDebtByFacilitiesType(String facilitiesType) {
         if (facilitiesType.equals("water")) {
             return new AnsString("123");
-        } else {
+        } else if (facilitiesType.equals("gaz")) {
             return new AnsString("321");
+        } else {
+            return new AnsString("not found");
         }
     }
 }
