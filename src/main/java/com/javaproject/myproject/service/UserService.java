@@ -4,11 +4,15 @@ import com.javaproject.myproject.model.*;
 
 public class UserService {
 
+    static final String str = "1222p";
+
     public static String getBalance() {
-        return "1244p";
+        return str;
     }
 
     public static String changePassword(UpdatePasswordRequest updatePasswordRequest) {
-        return updatePasswordRequest.getOldPassword() + " updated";
+        if(updatePasswordRequest.getOldPassword().equals("password"))
+            return "YES UPDATED";
+        else return "NO UPDATED";
     }
 }

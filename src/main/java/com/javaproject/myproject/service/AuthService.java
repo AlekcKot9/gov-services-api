@@ -9,14 +9,14 @@ public class AuthService {
     }
 
     public static String logInUser(AuthRequest authRequest) {
-        if(authRequest.getPassword()=="password")
+        if(authRequest.getPassword().equals("password"))
             return "YES LOGIN";
         else
             return "NO LOGIN";
     }
 
     public static String signUpUser(AuthRequest authRequest) {
-        if(authRequest.getPassword()=="password")
+        if(authRequest.getPassword().equals("password"))
             return "YES SIGN UP";
         else
             return "NO SIGN UP";
