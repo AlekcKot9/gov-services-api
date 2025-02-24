@@ -9,16 +9,18 @@ public class AuthService {
     }
 
     public static String logInUser(AuthRequest authRequest) {
-        if(authRequest.getPassword().equals("password"))
+        if (authRequest.getPassword().equals("password")) {
             return "YES LOGIN";
-        else
+        } else {
             return "NO LOGIN";
+        }
     }
 
     public static String signUpUser(AuthRequest authRequest) {
-        if(authRequest.getPassword().equals("password"))
+        if (authRequest.getPassword().equals("password")) {
             return "YES SIGN UP";
-        else
+        } else {
             return "NO SIGN UP";
+        }
     }
 }

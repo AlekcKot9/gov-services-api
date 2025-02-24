@@ -2,14 +2,16 @@ package com.javaproject.myproject.service;
 
 public class InvoiceService {
 
-    private InvoiceService(){
+    private InvoiceService() {
         throw new IllegalStateException("Utility class");
     }
 
     public static String getInvoiceByFacilitiesType(String serviceType) {
-        if(serviceType.equals("water"))
+        if (serviceType.equals("water")) {
             return "245444324";
-        else return "234nll";
+        } else {
+            return "234nll";
+        }
     }
 
     public static double getDebtByFacilitiesType(String facilitiesType) {

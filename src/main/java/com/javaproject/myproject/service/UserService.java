@@ -6,7 +6,7 @@ public class UserService {
 
     static final String BEST_STR = "1222p";
 
-    private UserService(){
+    private UserService() {
         throw new AssertionError("No instance for you!");
     }
 
@@ -15,8 +15,10 @@ public class UserService {
     }
 
     public static String changePassword(UpdatePasswordRequest updatePasswordRequest) {
-        if(updatePasswordRequest.getOldPassword().equals("password"))
+        if (updatePasswordRequest.getOldPassword().equals("password")) {
             return "YES UPDATED";
-        else return "NO UPDATED";
+        } else {
+            return "NO UPDATED";
+        }
     }
 }
