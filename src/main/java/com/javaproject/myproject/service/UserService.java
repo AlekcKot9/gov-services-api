@@ -6,6 +6,10 @@ public class UserService {
 
     static final String str = "1222p";
 
+    private UserService(){
+        throw new AssertionError("No instance for you!");
+    }
+
     public static String getBalance() {
         return str;
     }

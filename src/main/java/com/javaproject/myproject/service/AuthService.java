@@ -4,8 +4,8 @@ import com.javaproject.myproject.model.*;
 
 public class AuthService {
 
-    public static String concatenate(AuthRequest authRequest) {
-        return authRequest.getUsername();
+    private AuthService() {
+        throw new IllegalStateException("Utility class");
     }
 
     public static String logInUser(AuthRequest authRequest) {
