@@ -14,7 +14,7 @@ public class InvoiceService {
         } else if (serviceType.equals("gaz")) {
             return new AnsString("234nll");
         } else {
-            return new AnsString("not found type");
+            return new AnsString("not found");
         }
     }
 

@@ -16,6 +16,8 @@ public class AuthService {
         }
     }
 
+
+
     public static AnsString signUpUser(AuthRequest authRequest) {
         if (authRequest.getPassword().equals("password")) {
             return new AnsString("YES SIGN UP");
