@@ -8,12 +8,6 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/invoices")
 public class InvoicesController {
-/*
-    @GetMapping("/{id}")
-    public AnsString getInvoiceByServiceType(@PathVariable String id) {
-        return InvoiceService.getInvoiceByFacilitiesType(id);
-    }
- */
 
     @GetMapping("/{id}")
     public ResponseEntity<AnsString> getInvoiceById(@PathVariable String id) {
