@@ -9,12 +9,12 @@ import org.springframework.web.bind.annotation.*;
 public class UserController {
 
     @GetMapping("/getBalance")
-    public String getBalance() {
+    public AnsString getBalance() {
         return UserService.getBalance();
     }
 
     @PostMapping("/updatePassword")
-    public String changePassword(@RequestBody UpdatePasswordRequest updatePasswordRequest) {
+    public AnsString changePassword(@RequestBody UpdatePasswordRequest updatePasswordRequest) {
         return UserService.changePassword(updatePasswordRequest);
     }
 }

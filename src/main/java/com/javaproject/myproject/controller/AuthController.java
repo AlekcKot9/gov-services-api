@@ -9,14 +9,13 @@ import org.springframework.web.bind.annotation.*;
 public class AuthController {
 
 
-
     @PostMapping("/login")
-    public String logInUser(@RequestBody AuthRequest request) {
+    public AnsString logInUser(@RequestBody AuthRequest request) {
         return AuthService.logInUser(request);
     }
 
     @PostMapping("/signup")
-    public String signUpUser(@RequestBody AuthRequest request) {
+    public AnsString signUpUser(@RequestBody AuthRequest request) {
         return AuthService.signUpUser(request);
     }
 }

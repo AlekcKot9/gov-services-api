@@ -1,5 +1,6 @@
 package com.javaproject.myproject.controller;
 
+import com.javaproject.myproject.model.*;
 import com.javaproject.myproject.service.*;
 import org.springframework.web.bind.annotation.*;
 
@@ -8,12 +9,12 @@ import org.springframework.web.bind.annotation.*;
 public class InvoicesController {
 
     @GetMapping("/{id}")
-    public String getInvoiceByServiceType(@PathVariable String id) {
+    public AnsString getInvoiceByServiceType(@PathVariable String id) {
         return InvoiceService.getInvoiceByFacilitiesType(id);
     }
 
     @GetMapping("/debt")
-    public double getInvoicesDebt(@RequestParam String invoiceType) {
+    public AnsString getInvoicesDebt(@RequestParam String invoiceType) {
         return InvoiceService.getDebtByFacilitiesType(invoiceType);
     }
 }

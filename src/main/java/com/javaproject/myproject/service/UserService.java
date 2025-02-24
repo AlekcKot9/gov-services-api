@@ -10,15 +10,15 @@ public class UserService {
         throw new AssertionError("No instance for you!");
     }
 
-    public static String getBalance() {
-        return BEST_STR;
+    public static AnsString getBalance() {
+        return new AnsString(BEST_STR);
     }
 
-    public static String changePassword(UpdatePasswordRequest updatePasswordRequest) {
+    public static AnsString changePassword(UpdatePasswordRequest updatePasswordRequest) {
         if (updatePasswordRequest.getOldPassword().equals("password")) {
-            return "YES UPDATED";
+            return new AnsString("YES UPDATED");
         } else {
-            return "NO UPDATED";
+            return new AnsString("NO UPDATED");
         }
     }
 }

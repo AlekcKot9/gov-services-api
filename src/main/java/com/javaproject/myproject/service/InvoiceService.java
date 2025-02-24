@@ -1,24 +1,26 @@
 package com.javaproject.myproject.service;
 
+import com.javaproject.myproject.model.*;
+
 public class InvoiceService {
 
     private InvoiceService() {
         throw new IllegalStateException("Utility class");
     }
 
-    public static String getInvoiceByFacilitiesType(String serviceType) {
+    public static AnsString getInvoiceByFacilitiesType(String serviceType) {
         if (serviceType.equals("water")) {
-            return "245444324";
+            return new AnsString("245444324");
         } else {
-            return "234nll";
+            return new AnsString("234nll");
         }
     }
 
-    public static double getDebtByFacilitiesType(String facilitiesType) {
+    public static AnsString getDebtByFacilitiesType(String facilitiesType) {
         if (facilitiesType.equals("water")) {
-            return 123;
+            return new AnsString("123");
         } else {
-            return 321;
+            return new AnsString("321");
         }
     }
 }
