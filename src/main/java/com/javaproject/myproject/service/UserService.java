@@ -11,7 +11,7 @@ public class UserService {
     }
 
     public static String getBalance() {
-        return str;
+        return BEST_STR;
     }
 
     public static String changePassword(UpdatePasswordRequest updatePasswordRequest) {
