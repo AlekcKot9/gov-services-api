@@ -8,21 +8,19 @@ public class AuthService {
         throw new IllegalStateException("Utility class");
     }
 
-    public static AnsString logInUser(AuthRequest authRequest) {
+    public static boolean logInUser(AuthRequest authRequest) {
         if (authRequest.getPassword().equals("password")) {
-            return new AnsString("YES LOGIN");
+            return true;
         } else {
-            return new AnsString("NO LOGIN");
+            return false;
         }
     }
 
-
-
-    public static AnsString signUpUser(AuthRequest authRequest) {
-        if (authRequest.getPassword().equals("password")) {
-            return new AnsString("YES SIGN UP");
+    public static boolean signUpUser(AuthRequest authRequest) {
+        if (authRequest.getPassword().isEmpty() || authRequest.getUsername().isEmpty()) {
+            return false;
         } else {
-            return new AnsString("NO SIGN UP");
+            return true;
         }
     }
 }
