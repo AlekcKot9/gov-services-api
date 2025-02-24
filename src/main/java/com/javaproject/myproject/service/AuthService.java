@@ -9,18 +9,10 @@ public class AuthService {
     }
 
     public static boolean logInUser(AuthRequest authRequest) {
-        if (authRequest.getPassword().equals("password")) {
-            return true;
-        } else {
-            return false;
-        }
+        return authRequest.getPassword().equals("password"));
     }
 
     public static boolean signUpUser(AuthRequest authRequest) {
-        if (authRequest.getPassword().isEmpty() || authRequest.getUsername().isEmpty()) {
-            return false;
-        } else {
-            return true;
-        }
+        return authRequest.getPassword().isEmpty() || authRequest.getUsername().isEmpty();
     }
 }
