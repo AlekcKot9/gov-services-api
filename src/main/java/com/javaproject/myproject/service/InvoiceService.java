@@ -8,13 +8,13 @@ public class InvoiceService {
         throw new IllegalStateException("Utility class");
     }
 
-    public static AnsString getInvoiceByFacilitiesType(String serviceType) {
-        if (serviceType.equals("water")) {
+    public static AnsString getInvoiceById(String serviceType) {
+        if (serviceType.equals("1234")) {
             return new AnsString("245444324");
-        } else if (serviceType.equals("gaz")) {
-            return new AnsString("234nll");
+        } else if (serviceType.equals("4321")) {
+            return new AnsString("234654322");
         } else {
-            return new AnsString("not found");
+            return null;
         }
     }
 
@@ -24,7 +24,7 @@ public class InvoiceService {
         } else if (facilitiesType.equals("gaz")) {
             return new AnsString("321");
         } else {
-            return new AnsString("not found");
+            return null;
         }
     }
 }
