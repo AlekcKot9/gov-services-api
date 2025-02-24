@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 public class AuthController {
 
     @PostMapping("/login")
-    public ResponseEntity logInUser(@RequestBody AuthRequest request) {
+    public ResponseEntity<Void> logInUser(@RequestBody AuthRequest request) {
         if (AuthService.logInUser(request)) {
             return ResponseEntity.status(HttpStatus.OK).body(null);
         } else {
@@ -19,7 +19,7 @@ public class AuthController {
     }
 
     @PostMapping("/signup")
-    public ResponseEntity signUpUser(@RequestBody AuthRequest request) {
+    public ResponseEntity<Void> signUpUser(@RequestBody AuthRequest request) {
         if (AuthService.signUpUser(request)) {
             return ResponseEntity.status(HttpStatus.CREATED).body(null);
         } else {
